@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #414535;
+}
+
+a:hover {
+    color: #618985;
+}
+
+body {
+    background-color: #C19875;
+    color: #414535;
+}
+
+header {
+    max-width: 100%;
+    min-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    font-size: 22px;
+}
+
+#title {
+    grid-column-start: 2;
+    display: flex;
+    justify-content: center;
+}
+
+#user {
+    grid-column-start: 3;
+    font-size: 16px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+}
+
+header img {
+    width: 30px;
+    height: 30px;
+}
+
+header p {
+    margin: 5px;
+}
+
+header button {
+    margin-left: 5px;
+    margin-right: 20px;
+    padding: 2px;
+    font-size: 12px;
+
+}
+
+main {
+    max-width: 100%;
+    min-width: 1000px;
+    height: 600px;
+
+    display: grid;
+    grid-template-rows: 60px;
+}
+
+#search-container {
+    background-color: #96BBBB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#search-container option, input, label, select, button {
+    font-size: 16px;
+}
+
+#search-container input {
+    width: 225px;
+    text-align: center;
+}
+
+#page-container {
+    display: flex;
+    justify-content: center;
+}
+
+#paging {
+    width: 225px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#brewery-container {
+    background-color: #F2E3BC;
+    width: 1fr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#brewery {
+    height: 210px;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+
+    background-color: #C19875;
+    margin: 5px;
+}
+
+#brewery h3 {
+    justify-self: self-end
+}
+
+#brewery img {
+    position: relative;
+    right: 65px;
+}

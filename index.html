@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./main.css">
+    <title>Breweries</title>
+    <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase-database.js"></script>
+</head>
+<body>
+
+    <header id="header-container">
+        <div id="title">
+            <a href="./index.html"><h1 >Breweries!!!</h1></a>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="search-container">
+
+            <form id="search-form">
+                <select name="type" id="type">
+                    <option value="" selected>Choose Brewery Type</option>
+                    <option value="">All</option>
+                    <option value="micro">Micro</option>
+                    <option value="contract">Contract</option>
+                    <option value="brewpub">Brewpub</option>
+                    <option value="regional">Regional</option>
+                    <option value="planning">Planning</option>
+                    <option value="proprietor">Proprietor</option>
+                </select>
+                <label>
+                    State<input type="text" name="state" id="state" placeholder="Enter Complete State Name">
+                </label>
+                <label>
+                    City<input type="text" name="city" id="city" placeholder="Enter Complete City Name">
+                </label>
+                <button>Search</button>
+            </form>
+
+            <section id="page-container">
+                <div id="paging">
+                    <button id="previous-button">Previous Page</button>
+                    <span id="current-page">1</span>
+                    <button id="next-button">Next Page</button>
+                </div>
+            </section>
+
+        </section>
+
+        <section id="brewery-container"></section>
+
+    </main>
+    
+<script type="module" src="./src/index.js">  </script>
+</body>
+</html>
