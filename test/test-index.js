@@ -7,4 +7,4 @@ global.document = window.document;
 global.firebase = require('firebase');
 
 require = require('esm')(module);
-module.exports = require("./tests.js");
+module.exports = require('./tests.js');
