@@ -4,7 +4,7 @@ var config = {
     databaseURL: 'https://brew-api-53655.firebaseio.com',
     projectId: 'brew-api-53655',
 };
-firebase.initializeApp(config);
+export const app = firebase.initializeApp(config);
 
 export const auth = firebase.auth();
 
