@@ -7,7 +7,7 @@ import './functions/make-user-template.test.js';
 import './functions/object-to-array.test.js';
 
 // add this import from our firebase.js module:
-import { app } from '../src/firebase.js';
+import { app } from '../src/firebase/firebase.js';
 import './html-equal.js';
 
 // add this line that cleans up firebase when test suite is done:
